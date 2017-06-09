@@ -1,0 +1,17 @@
+{
+  "name": "booklist",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.coffee",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "jusopi <jwopitz@gmail.com>",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "csvjson": "^4.3.3",
+    "lodash": "^4.17.4",
+    "mkdirp": "^0.5.1",
+    "moment": "^2.18.1"
+  }
+}
