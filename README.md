@@ -4,4 +4,4 @@ Utility script for parsing Goodread's export data into easily readable Title, Au
 ## command line usage
 `coffee ./path/to/script.coffee ./path/to/goodreads_exported.csv`
 
-This will output to `to_read_YYYY-MM-DD.csv`
+This will output to `./bin/to_read_YYYY-MM-DD.csv`
