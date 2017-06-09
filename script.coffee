@@ -24,7 +24,7 @@ parseData = (data)->
 
 	console.log list[0]
 
-	saveLoc = "./bin/to_read_#{ moment().format('YYYY-MM-DD') }.csv"
+	saveLoc = process.argv[3] or "./bin/to_read_#{ moment().format('YYYY-MM-DD') }.csv"
 	out = csvjson.toCSV list, { delimiter:',', wrap:false }
 	mkdirp dirname(saveLoc), (err)->
 		return console.warn err if err
