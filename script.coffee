@@ -10,16 +10,17 @@ parseData = (data)->
 	a = csvjson.toObject data, { delimiter:',', quote:'"' }
 	a = _.chain a
 		.filter { Bookshelves:'to-read' }
+		.sortBy 'Title'
 		.sortBy 'Author l-f'
 		.value()
 
 	list = []
 	_.forEach a, (obj)->
 		list.push {
-			title: obj.Title
 			author: obj['Author l-f']
-			isbn: obj.ISBN
-			isbn13: obj.ISBN13
+			title: obj.Title
+			# isbn: obj.ISBN
+			# isbn13: obj.ISBN13
 		}
 
 	console.log list[0]
